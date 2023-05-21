@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  staticfiles:
+   container_name: mediaserver
+   restart: always
+   ports:
+    - 8080:80
+   image: nginx:latest
+   volumes:
+    - ./files/:/usr/share/nginx/html/
+    - ./nginx/nginx.conf:/etc/nginx/nginx.conf
