@@ -25,7 +25,7 @@ Forma simples de servir arquivos estáticos na web com docker
 ### Configurações nginx
 ```
 server {
-    server_name   mediaserver.programador.tv;
+    server_name   static.your.com;
     location / {
         proxy_pass         http://your.com:8080;
         proxy_http_version 1.1;
